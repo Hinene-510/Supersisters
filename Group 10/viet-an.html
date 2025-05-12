@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nguyen Thi Viet An - Personal Page</title>
   <link rel="stylesheet" href="CSS/viet-an-styles.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <div class="container">
-      <img src="images/Việt An.jpg" alt="Việt An Photo" class="profile-pic">
+      <img src="images/Việt An.jpg" alt="Việt An Photo" class="profile-pic" />
       <h1>Nguyen Thi Viet An</h1>
-      <p>Leader & Red Warrior</p>
+      <p>Lead & Red Warrior</p>
     </div>
   </header>
 
-  <nav>
+  <nav data-aos="fade-in">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -24,7 +27,7 @@
   </nav>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>🔥 About Me 🔥</h2>
       <p>Hello! My name is Nguyen Thi Viet An, and I’m honored to be the Leader & Red Warrior of our team.
         I’m passionate about taking initiative, building strong teams, and inspiring others to push their limits.
@@ -33,33 +36,44 @@
         Let’s charge forward together with courage and determination!</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>🚀 My Projects 🚀</h2>
-      <div class="project">
+      <div class="project" data-aos="zoom-in" data-aos-delay="200">
         <h3>Where Passion Meets Action</h3>
-        <p>FireSteps is a transformative leadership development bootcamp designed for high school and university students who want to lead with passion and purpose. The program includes three phases: ignite (self-discovery and motivation), challenge (group leadership simulations and outdoor team missions), and impact (designing and leading a mini community project). Participants gain hands-on experience in leadership, crisis management, and team dynamics. As the Red Warrior, I lead this project to awaken inner strength and help young leaders step into their potential with boldness.</p>
+        <p>FireSteps is a transformative leadership development bootcamp designed for high school and university students who want to lead with passion and purpose. The program includes three phases: ignite (self-discovery and motivation), challenge (group leadership simulations and outdoor team missions), and impact (designing and leading a mini community project).</p>
         <a href="https://example.com" target="_blank">View Project</a>
       </div>
-      <div class="project">
+
+      <div class="project" data-aos="zoom-in" data-aos-delay="400">
         <h3>Voices That Spark Change</h3>
-        <p>Ignite Talks is a youth-led public speaking platform where students present powerful 5-minute speeches on issues they care deeply about—ranging from social justice to personal transformation. We host monthly open-mic events and annual competitions that blend storytelling with leadership training. Participants receive coaching on delivery, emotional intelligence, and stage presence. The goal is to empower a generation of changemakers to speak up and lead with courage. As the Leader & Red Warrior, I mentor the speakers and set the tone for fearless, impactful expression.</p>
+        <p>Ignite Talks is a youth-led public speaking platform where students present powerful 5-minute speeches on issues they care deeply about—ranging from social justice to personal transformation. We host monthly open-mic events and annual competitions that blend storytelling with leadership training.</p>
         <a href="https://example.com" target="_blank">View Project</a>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>📞 Contact Me 📞</h2>
-      <p>Feel free to reach out to me via email or social media!</p>
-      <ul>
-        <li>Email: <a href="nguyenthivietan@gmail.com">NguyenThiVietAn</a></li>
-        <li>Facebook: <a href="https://Facebook.com/in/nguyenthivietan" target="_blank">NguyenThiVietAn</a></li>
-        <li>Instagram: <a href="https://Instagram.com/nguyenthivietan" target="_blank">NguyenThiVietAn</a></li>
-      </ul>
+      <p class="social-links">Feel free to reach out to me via email or social media!</p>
+      <div class="social-links">
+      <a href="#" class="social-link"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#" class="social-link"><img src="images/tiktok.png" alt="Tiktok"></a>
+      <a href="#" class="social-link"><img src="images/ig.png" alt="Instagram"></a>
+      <a href="#" class="social-link"><img src="images/yt.png" alt="YouTube"></a>
+    </div>
     </section>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Nguyen Thi Viet An. Made with ❤️.</p>
   </footer>
+
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>

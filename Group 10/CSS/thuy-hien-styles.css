@@ -111,3 +111,20 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/*social-link*/
+.social-links {
+	text-align: center;
+  margin-top: 15px;
+}
+
+.social-link img {
+   width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+  transform: scale(1.2);
+}

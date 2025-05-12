@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nguyen Thu Dieu - Personal Page</title>
   <link rel="stylesheet" href="CSS/thu-dieu-styles.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <div class="container">
       <img src="images/Thu Diệu.jpg" alt="Thu Diệu Photo" class="profile-pic">
       <h1>Nguyen Thu Dieu</h1>
@@ -15,7 +18,7 @@
     </div>
   </header>
 
-  <nav>
+  <nav data-aos="fade-in">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -24,7 +27,7 @@
   </nav>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>🌊 About Me 🌊</h2>
       <p>Hello, I’m Nguyen Thu Dieu, known as the Commander & Blue Strategist of our team.
         I thrive on structure, analysis, and smart planning. I love solving problems and finding efficient paths to success.
@@ -33,33 +36,46 @@
         Let’s plan well and execute even better.</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>🐳 My Projects 🐳</h2>
-      <div class="project">
-        <h3>Design. Decide. Deliver.</h3>
-        <p>MindMap Mission is a strategy-based bootcamp where students learn how to transform abstract ideas into well-structured, executable projects. We use real-world case studies and tools like SWOT, Gantt charts, and decision matrices to teach strategic thinking. Participants work in teams to design a project proposal, complete with timelines, budgets, and KPIs, then pitch to a mock board of evaluators. As Commander & Blue Strategist, I ensure participants think with clarity and precision, developing solutions that are both innovative and realistic.</p>
-        <a href="https://example.com" target="_blank">View Project</a>
-      </div>
-      <div class="project">
+      <div class="project" data-aos="zoom-in" data-aos-delay="200">
         <h3>Building Smart Solutions Together</h3>
         <p>LogicBridge is a problem-solving challenge that brings together diverse student teams to tackle real issues facing their schools or communities—such as waste reduction, student engagement, or digital learning. Each team is guided by mentors and supported by data analysis tools and workshops in systems thinking. Final solutions are implemented in pilot phases, and winning teams receive support to scale their ideas. This project champions analytical leadership and collaborative execution, which I guide with strategic foresight and steady decision-making.</p>
-        <a href="https://example.com" target="_blank">View Project</a>
+        
+		<a href="https://example.com" target="_blank">View Project</a>
+      </div>
+
+      <div class="project" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Guiding the Way with Positivity</h3>
+        <p>BrightPath is a mentorship and life-coaching initiative that connects high school students with inspiring university mentors. The program includes bi-weekly mentoring sessions, personal goal mapping, and life skill workshops on topics like time management, emotional intelligence, and values-based decision-making. Each student completes the journey with a written vision statement and action plan. As Captain, I steer the BrightPath community with optimism, ensuring every participant walks away with clarity, confidence, and a mentor for life.</p>
+        
+		<a href="https://example.com" target="_blank">View Project</a>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>💦 Contact Me 💦</h2>
-      <p>Feel free to reach out to me via email or social media!</p>
-      <ul>
-        <li>Email: <a href="nguyenthudieu@gmail.com">NguyenThuDieu</a></li>
-        <li>Facebook: <a href="https://Facebook.com/in/nguyenthudieu" target="_blank">NguyenThuDieu</a></li>
-        <li>Instagram: <a href="https://Instagram.com/nguyenthudieu" target="_blank">NguyenThuDieu</a></li>
-      </ul>
+      <p class="social-links">Feel free to reach out to me via email or social media!</p>
+      <div class="social-links">
+      <a href="#" class="social-link"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#" class="social-link"><img src="images/tiktok.png" alt="Tiktok"></a>
+      <a href="#" class="social-link"><img src="images/ig.png" alt="Instagram"></a>
+      <a href="#" class="social-link"><img src="images/yt.png" alt="YouTube"></a>
+    </div>
     </section>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Nguyen Thu Dieu. Made with 💙.</p>
   </footer>
+
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>

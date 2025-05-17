@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Login - NEUbie</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+			rel="stylesheet" />
+		<link href="css/all.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top box -->
+			<!-- Logo & Site Name -->
+			<div class="placeholder">
+				<div
+					class="parallax-window"
+					data-parallax="scroll"
+					data-image-src="img/background.jpg">
+					<div class="tm-header">
+						<div class="row tm-header-inner">
+							<div class="col-md-6 col-12">
+								<img
+									src="img/logo.jpg"
+									alt="Logo"
+									class="tm-site-logo" style="border-radius: 50%;">
+								<div class="tm-site-text-box">
+									<h1 class="tm-site-title">NEUbie</h1>
+									<h6 class="tm-site-description">NEU's Souvenir Shop</h6>
+								</div>
+							</div>
+							<nav class="col-md-6 col-12 tm-nav">
+								<ul class="tm-nav-ul">
+									<li class="tm-nav-li">
+										<a href="index.html" class="tm-nav-link">Home</a>
+									</li>
+									<li class="tm-nav-li">
+										<a href="login.html" class="tm-nav-link active">Login</a>
+									</li>
+									<li class="tm-nav-li">
+										<a href="register.html" class="tm-nav-link">Register</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Create Your Account</h2>
+			</header>
+
+			<!-- Cart Section -->
+			<section class="tm-cart-section">
+				<div class="card login">
+					<h3 class="text-center">Login to Your Account</h3>
+					<form class="login-form">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								placeholder="Enter your email"
+								required />
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								id="password"
+								placeholder="Enter your password"
+								required />
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-login" onclick="window.location.href='index.html'; return false;">
+								Login
+							</button>
+						</div>
+						<p class="text-center">
+							Don't have an account? <a href="register.html">Register here</a>
+						</p>
+					</form>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="tm-footer text-center">
+				<p>
+					&copy; 2025 NEUbie | Design: Group 9
+				</p>
+			</footer>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<script>
+			// Khởi tạo hiệu ứng parallax nếu có phần tử chứa data-parallax
+			$(document).ready(function () {
+				$(".parallax-window").parallax({ imageSrc: "img/background.jpg" });
+			});
+		</script>
+		<script src="js/login.js"></script>
+	</body>
+</html>
